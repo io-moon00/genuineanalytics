@@ -1,0 +1,181 @@
+<div class="w-full">
+    <div class="relative page-width">
+        <!-- Modal header -->
+        <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 border-gray-200">
+            <h2 class="text-lg font-semibold text-gray-900 dark:text-white">
+                immuno Check
+            </h2>
+        </div>
+        <!-- Modal body -->
+        <form action="#">
+            <div>
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tier</label>
+                <div class="flex items-center gap-5 border-b border-gray-200 pb-4">
+                <div class="flex items-center">
+                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Hund</label>
+                </div>
+                <div class="flex items-center">
+                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Katze</label>
+                </div>
+            </div>
+ 
+            <H3>Tier</H3>
+                <div class="!grid gap-4 mb-4 sm:grid-cols-2"></div>
+                        <div class="!grid grid-rows-2 gap-4 border-b pb-4 border-gray-200 sm:col-span-2 md:gap-6 sm:grid-cols-2">
+                            <div>
+                                <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                                <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Name Tier" required="">
+                            </div>
+                            <div>
+                                <label for="weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Geburtsdatum</label>
+                                <input type="number" name="weight" id="weight" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="dd.mm.yyyy" required="">
+                            </div>
+                            <div>
+                                <label for="length" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rasse</label>
+                                <input type="number" name="length" id="length" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Rasse" required="">
+                            </div>
+                            <div>
+                                <label for="width" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Geschlecht</label>
+                                <div class="flex items-center gap-5">  
+                                    <div class="items-center">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                        <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">M</label>
+                                    </div>
+                                    <div class="items-center">
+                                        <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">W</label>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div>
+                                <label for="length" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Datum letzte Impfung</label>
+                                <input type="number" name="length" id="length" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="dd.mm.yyyy" required="">
+                            </div>
+                        </div>
+                </div>
+            <h3>Besitzer</h3>
+                <div class="!grid gap-4 mb-4  sm:grid-cols-2 "></div>
+                    <div class="!grid grid-rows-2 gap-4 border-b pb-4 border-gray-200 sm:col-span-2 md:gap-6 sm:grid-cols-2">
+                    <div>
+                        <label for="nachname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                        <input type="text" name="nachname" id="nachname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nachname" required>
+                    </div>
+                    <div>
+                        <label for="vorname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Vorname</label>
+                        <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Vorname" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="telefon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Telefon</label>
+                        <input type="text" name="telefon" id="telefon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="+41 79 123 45 67" required>
+                    </div>
+                    <div class="col-span-2">
+                        <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse</label>
+                        <div class="grid grid-cols-2 grid-rows-2 gap-4">
+                            <input type="text" name="strasse" id="strasse" class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Strasse" required>
+                            <input type="text" name="nummer" id="nummer" class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nummer" required>
+                            <input type="text" name="plz_ort" id="plz_ort" class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="PLZ / Ort" required>
+                        </div>
+                </div>
+            </div>
+            <h3>Zustellung</h3>
+            <div>
+                <div>
+                    <label for="width" class="block text-sm font-medium text-gray-900 dark:text-white">Resultate an Tierarzt/Tierbetreuung senden?</label>
+                    <div class="flex items-center gap-5">  
+                        <div class="items-center">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ja</label>
+                        </div>
+                        <div class="items-center">
+                            <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nein</label>
+                        </div>
+                    </div>
+                    </div>
+                <div class="!grid gap-4 mb-4  sm:grid-cols-2 "></div>
+                    <div class="!grid grid-rows-2 gap-4 border-b pb-4 border-gray-200 sm:col-span-2 md:gap-6 sm:grid-cols-2">
+                            <div>
+                                <label for="vorname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                                <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nachname" required>
+                            </div>
+                            <div>
+                                <label for="vorname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Vorname</label>
+                                <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Vorname" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Email" required>
+                            </div>
+                    </div>
+            </div>
+            <h3 class="text-green-600">Wie sind sie auf uns Aufmerksam geworden?</h3>
+            <div class="!grid gap-4 mb-4  sm:grid-cols-2 "></div>
+                <div class="!grid gap-4 border-b pb-4 border-gray-200 sm:col-span-2 md:gap-6 sm:grid-cols-2">
+                    
+                        <div>
+                        <div class="items-center">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Empfehlung durch Bekannte/Freune</label>
+                        </div>
+                        <div class="items-center">
+                            <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vortrag/Webinar</label>
+                        </div>
+                        <div class="items-center">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Züchter</label>
+                        </div>
+                        <div class="items-center">
+                            <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Hundeschule</label>
+                        </div>  <div class="items-center">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Hundesport/Hundeplausch</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="items-center">
+                            <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tierheim/Tierhort</label>
+                        </div> 
+                        <div class="items-center">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Internet</label>
+                        </div>
+                        <div class="items-center">
+                            <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tierarzt</label>
+                        </div> 
+                        <div class="items-center">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                            <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Therapeut</label>
+                        </div>
+                    </div>
+                    <div class="items-center">
+                        <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Anderes (wie?)</label>
+                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Sonstiges">
+                    </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    
+    
+    {% schema %}
+    {
+    "presets": [
+        {
+            "name": "immunocheck Formular",
+        }
+    ],
+    }
+    
+    {% endschema %}
+      

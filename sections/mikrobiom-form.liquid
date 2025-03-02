@@ -1,0 +1,489 @@
+<div class="w-full">
+    <div class="relative page-width">
+        <!-- Modal header -->
+        <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 border-gray-200">
+            <h2 class="text-lg font-semibold text-gray-900 dark:text-white">
+                mikrobiom Check
+            </h2>
+        </div>
+        <!-- Modal body -->
+        <form action="#">
+           <div>
+            <H3>Tier</H3>
+                <div class="!grid gap-4 mb-4 sm:grid-cols-2"></div>
+                        <div class="!grid grid-rows-2 gap-4 border-b pb-4 border-gray-200 sm:col-span-2 md:gap-6 sm:grid-cols-2">
+                            <div>
+                                <label for="Name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                                <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Name Tier" required="">
+                            </div>
+                            <div>
+                                <label for="birthdate" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Geburtsdatum</label>
+                                <input type="date" name="weight" id="weight" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="dd.mm.yyyy" required="">
+                            </div>
+                            <div>
+                                <label for="rasse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rasse</label>
+                                <input type="text" name="length" id="length" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Rasse" required="">
+                            </div>
+                            <div>
+                                <label for="width" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Geschlecht</label>
+                                <div class="flex items-center gap-5">  
+                                    <div class="items-center">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                        <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">M</label>
+                                    </div>
+                                    <div class="items-center">
+                                        <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">W</label>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div>
+                                <label for="kastriert" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kastriert</label>
+                                <div class="flex items-center gap-5">  
+                                    <div class="items-center">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                        <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ja</label>
+                                    </div>
+                                    <div class="items-center">
+                                        <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nein</label>
+                                    </div> 
+                                </div>
+                                <div class="flex">
+                                    <label for="begründung" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Wenn nein, warum?</label>
+                                    <input type="number" name="length" id="length" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Rasse" required="">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gewicht in KG</label>
+                                <input type="number" name="length" id="length" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Rasse" required="">
+                            </div>
+                        </div>
+                </div>
+            <h3>Besitzer</h3>
+                <div class="!grid gap-4 mb-4  sm:grid-cols-2 "></div>
+                    <div class="!grid grid-rows-2 gap-4 border-b pb-4 border-gray-200 sm:col-span-2 md:gap-6 sm:grid-cols-2">
+                    <div>
+                        <label for="nachname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                        <input type="text" name="nachname" id="nachname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nachname" required>
+                    </div>
+                    <div>
+                        <label for="vorname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Vorname</label>
+                        <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Vorname" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="telefon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Telefon/Mobil</label>
+                        <input type="text" name="telefon" id="telefon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="+41 79 123 45 67" required>
+                    </div>
+                    <div class="col-span-2">
+                        <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse</label>
+                        <div class="max-w-[30%] grid grid-cols-2 grid-rows-2 gap-4">
+                            <input type="text" name="strasse" id="strasse" class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Strasse" required>
+                            <input type="text" name="nummer" id="nummer" class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nummer" required>
+                            <input type="text" name="plz_ort" id="plz_ort" class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="PLZ / Ort" required>
+                        </div>
+                </div>
+            </div>
+            <h3>Gesundheitszustand</h3>
+                <div>
+                    <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Allgemeinzustand</label>
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">normal</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">verändert:</label>
+                            </div> 
+                        </div>
+                        <input type="text" name="plz_ort" id="plz_ort" class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="PLZ / Ort" required>
+                </div>
+                <div>
+                    <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gewichtsveränderung</label>
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">nein</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Zunahme/Abnahme in kg</label>
+                            </div>
+                        </div>
+                        <input type="text" name="plz_ort" id="plz_ort" class="  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="PLZ / Ort" required>
+                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Zeitraum?</label>
+                        <input type="text" name="plz_ort" id="plz_ort" class="  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="PLZ / Ort" required>
+                </div>
+                <div>
+                    <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Appetit</label>
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">normal</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">vermehrt</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">vermindert</label>
+                            </div>
+                        </div>
+                </div>
+                <div>
+                    <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kotabsatz</label>
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">normal</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Verstopfung</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Durchfall</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Blähungen</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Bauchgeräusche</label>
+                            </div>
+                        </div>
+                </div>
+                <div>
+                    <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Trinkwassermenge/Durst</label>
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">normal</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">vermehrt</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">vermindert</label>
+                            </div>
+                        </div>
+                </div>
+                <div>
+                    <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Harnabsatz</label>
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">normal</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">vermehrt</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">vermindert</label>
+                            </div>
+                        </div>
+                </div>
+                <div>
+                    <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bekannte Erkrankungen</label>
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Übergewicht</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Diabetes</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Herzerkrankungen</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Magen-Darm-erkrankungen</label>
+                            </div>
+                        </div>
+                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Welche?</label>
+                        <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Vorname" required>
+                       
+
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Arthrose</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">rheumatische Arthritis</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Gelenkentzündungen</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Krebs</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Schilddrüsenüber-/unterfunktion</label>
+                            </div> 
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Unverträglichkeiten</label>
+                            </div>
+                         </div>
+                         <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Welche?</label>
+                         <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Vorname" required>
+                    
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Lebererkrankungen</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Allergien, falls Ja:</label>
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Futter(z.B. poulet, Rind)</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Milben</label>
+                            </div>
+                    </div>
+                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Andere</label>
+                    <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Vorname" required>
+                    
+                </div>
+                <div>
+                    <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fressverhalten</label>
+                        <div class="flex items-center gap-5">  
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">frisst</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">frisst nicht das ganze Futter</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">frisst etappenweise</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">verschlingt das futter sehr schnell</label>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-5">  
+                            <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Zeigt ihr Hund auffälliges Verhalten?</label>
+                            <div class="items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ja</label>
+                            </div>
+                            <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nein</label>
+                            </div>
+                            <div class="flex items-center gap-5">  
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Falls ja, wie äussert sich dieses?</label>
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nervosität</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Unruhe</label>
+                                </div>
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Angstzustände</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Aggresivität</label>
+                                </div>
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Launigkeit</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Demenz</label>
+                                </div>
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Schlafstörungen</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Urinieren/Koten im Haus</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Depression</label>
+                                </div>
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">anderes</label>
+                                <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Vorname" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Haltung</label>
+                            <div class="flex items-center gap-5">  
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">draussen (z.B. freilaufend auf Hof)</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">drinnen (Wohnung/Haus)</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">mit Garten</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">mit anderen Tieren</label>
+                                </div>
+                            </div> 
+                            <div class="flex items-center gap-5">  
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">draussen (z.B. freilaufend auf Hof)</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">drinnen (Wohnung/Haus)</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">mit Garten</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">mit anderen Tieren</label>
+                                </div>
+                            </div>
+                            <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Wie lange ist der Hund pro Tag alleine</label>
+                            <div class="flex items-center gap-5">  
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">0-30 Min</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">30min - 2 Std</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> > 2 Std </label>
+                                </div>
+                            </div>
+                            <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Wie lange bewegt sich der Hund pro Tag draussen</label>
+                            <div class="flex items-center gap-5">  
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">0-30 Min</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">30min - 2 Std</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> > 2 Std </label>
+                                </div>
+                            </div>
+                            <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Wie oft wird mit dem Hund gespielt (Such-/Bewegungs-/Denkspiele)?</label>
+                            <div class="flex items-center gap-5">  
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">nie</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">gelegentlich</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">täglich</label>
+                                </div>
+                            </div>
+                            <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Leidet Ihr Hund an wiederkehrenden Infektionen (Infektanfälligkeiten) oder ist häufig krank?</label>
+                            <div class="flex items-center gap-5">  
+                                <div class="items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ja</label>
+                                </div>
+                                <div class="items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                    <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">nein</label>
+                                </div>
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Wurde eine Diagnose gestellt?</label>
+                                <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Vorname" required>
+                           
+                            </div>
+                           <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Wie stark ausgeprägt is dte Infektanfälligkeit?</label>
+                           <div class="flex items-center gap-5">  
+                               <div class="items-center">
+                                   <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                   <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">1 infektion7Jahr</label>
+                               </div>
+                               <div class="items-center">
+                                   <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                   <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">2-3 Infektionen/Jahr</label>
+                               </div>
+                               <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> 3 Infektionen/Jahr</label>
+                            </div>
+                            <label for="adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Leidet ihr Hund wiederholt an Durchfall?</label>
+                           <div class="flex items-center gap-5">  
+                               <div class="items-center">
+                                   <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                   <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">nie</label>
+                               </div>
+                               <div class="items-center">
+                                   <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                   <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">1 Mal/Jahr</label>
+                               </div>
+                               <div class="items-center">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue bg-gray-100 border-gray-300 focus:ring-blue">
+                                <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> 3/Jahr</label>
+                            </div>
+                            <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Falls ja, wurde eine Diagnose gestellt?</label>
+                            <input type="text" name="vorname" id="vorname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Vorname" required>
+                        </div>                            
+                     </div>
+                </div>
+
+
+        </form>
+    </div>
+
+
+    {% schema %}
+    {
+    "presets": [
+        {
+            "name": "Mikrobiom Formular",
+        }
+    ],
+    }
+    
+    {% endschema %}
