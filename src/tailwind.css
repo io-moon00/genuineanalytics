@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+    --color-blue: #48b7cd;
+    --color-blue-dark: #2f7f8f;
+    --color-blue-light: #7dcfe2;
+}
+
+@utility prose {
+    ol, ul{
+        @apply list-outside list-disc mx-6;
+    },
+    p {
+        @apply text-lg text-gray-700;
+    }
+    a {
+        @apply text-blue;
+    }
+    a:hover {
+        @apply text-blue-dark;
+    }
+}
